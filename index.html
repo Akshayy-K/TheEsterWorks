@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE ESTER WORKS - Luxury Scents</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Didot', serif;
+            background-color: #0F0026; /* Dark cosmic purple */
+            color: #D4AF37;
+            padding: 0;
+            margin: 0;
+            background-image: url('https://www.transparenttextures.com/patterns/groovepaper.png'); /* Subtle texture */
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #23003E; /* Rich, deeper purple */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        h1 {
+            font-family: 'Didot', serif; /* Luxurious, minimalistic font */
+            color: #D4AF37;
+            font-size: 4em;
+            letter-spacing: 5px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            font-family: 'Didot', serif;
+            color: #D4AF37;
+            margin: 0 20px;
+            font-size: 1.5em;
+            text-decoration: none;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+            text-shadow: 1px 1px 5px gold;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 60px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(5px);
+            border-radius: 15px;
+            margin: 20px;
+        }
+
+        .hero h2 {
+            font-family: 'Didot', serif;
+            font-size: 2.8em;
+            color: #D4AF37;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        .products {
+            display: flex;
+            flex-direction: column; /* Display one scent per row */
+            align-items: center;
+            margin: 50px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .product {
+            width: 60%; /* Adjusted width for one-row display */
+            background-color: rgba(58, 0, 72, 0.9);
+            border: 2px solid #D4AF37;
+            border-radius: 15px;
+            margin: 20px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product img {
+            width: 80%;
+            border-radius: 10px;
+            transition: all 0.4s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Dynamic Hover Backgrounds */
+        .product.vivaldi:hover {
+            background: url('THE VIVALDI.jpeg') no-repeat center center/cover;
+        }
+
+        .product.prosecco:hover {
+            background: url('THE PORSECCO.jpeg') no-repeat center center/cover;
+        }
+
+        .product.bourbon:hover {
+            background: url('THE BOURBON.jpeg') no-repeat center center/cover;
+        }
+
+        .product.see:hover {
+            background: url('THE 10-I-SEE.jpeg') no-repeat center center/cover;
+        }
+
+        .product.raina:hover {
+            background: url('THE RAINA.jpeg') no-repeat center center/cover;
+        }
+
+        .product h3 {
+            font-family: 'Didot', serif;
+            color: #D4AF37;
+            margin-top: 15px;
+            font-size: 2em;
+        }
+
+        .product p {
+            color: #E2E2E2;
+            margin: 15px 0;
+            font-size: 1.3em;
+        }
+
+        .product .price {
+            color: #FFD700;
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 1.5em;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #180020;
+            text-align: center;
+            padding: 20px;
+            color: #D4AF37;
+            margin-top: 50px;
+            font-family: 'Didot', serif;
+        }
+
+        /* Instagram Icon */
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons img {
+            width: 40px;
+            transition: transform 0.3s;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2);
+        }
+
+        /* Instagram Link Style */
+        .instagram-link {
+            color: #D4AF37;
+            text-decoration: none;
+            font-size: 1.3em;
+            margin-top: 10px;
+            display: block;
+            transition: color 0.3s;
+        }
+
+        .instagram-link:hover {
+            color: white;
+            text-shadow: 1px 1px 5px gold;
+        }
+
+    </style>
+    <!-- External Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Didot&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="brand logo.jpeg" alt="THE ESTER WORKS" style="width: 200px;"/>
+        <h1>THE ESTER WORKS</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About Us</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Intra in luxuriam esterorum</h2> <!-- Latin Tagline -->
+    </section>
+
+    <!-- Top Selling Products Section -->
+    <section class="products">
+        <!-- The Vivaldi -->
+        <div class="product vivaldi">
+            <img src="THE VIVALDI.jpeg" alt="The Vivaldi">
+            <h3>The Vivaldi</h3>
+            <p>A symphony of sandalwood esters, playing deep notes of musk, inviting elegance with every breath.</p>
+            <p class="price">$89.99 CAD</p>
+        </div>
+
+        <!-- The Prosecco -->
+        <div class="product prosecco">
+            <img src="THE PORSECCO.jpeg" alt="The Prosecco">
+            <h3>The Prosecco</h3>
+            <p>A sparkling toast to sweetness, kissed by the essence of Prosecco. Effervescent, joyful, and playful.</p>
+            <p class="price">$79.99 CAD</p>
+        </div>
+
+        <!-- The Bourbon -->
+        <div class="product bourbon">
+            <img src="THE BOURBON.jpeg" alt="The Bourbon">
+            <h3>The Bourbon</h3>
+            <p>Rich and indulgent, like an old-world cocktail, powerful yet smooth—a scent crafted for the night.</p>
+            <p class="price">$109.99 CAD</p>
+        </div>
+
+        <!-- The 10-I-See -->
+        <div class="product see">
+            <img src="THE 10-I-SEE.jpeg" alt="The 10-I-See">
+            <h3>The 10-I-See</h3>
+            <p>An escape to paradise. Lemongrass and cherry blossom blend, kissed by the ocean breeze of the Bahamas.</p>
+            <p class="price">$74.99 CAD</p>
+        </div>
+
+        <!-- The Raina -->
+        <div class="product raina">
+            <img src="THE RAINA.jpeg" alt="The Raina">
+            <h3>The Raina</h3>
+            <p>It smells like a summer night on a beach, bonfire nearby, waves crashing at your feet. Not just a scent, an experience—bottled for your unforgettable moments.</p>
+            <p class="price">$210.70 CAD</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 THE ESTER WORKS. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/theesterworks?igsh=MXMwbnY1cWkxM25vbA==">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.instagram.com/theesterworks?igsh=MXMwbnY1cWkxM25vbA==" class="instagram-link">Follow us on Instagram</a>
+        </div>
+    </footer>
+
+</body>
+</html>
+
